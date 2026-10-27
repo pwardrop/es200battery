@@ -1,6 +1,6 @@
 # ESP32-C6 ES200 / ES90 Battery Monitor
 
-An Arduino-based wake/keep-alive controller and local Wi-Fi status monitor for compatible ES200 / ES90 scooter batteries.
+An Arduino-based wake/keep-alive controller and local Wi-Fi status monitor for compatible ES200 / ES90 scooter batteries. Ideas and information were inspired by material shared by JAG35 (by Jehu Garcia) website.
 
 The ESP32-C6 periodically sends the battery's observed wake command over UART, captures the battery's replies, and serves a browser dashboard with raw frames and provisional decoded telemetry. Wi-Fi credentials are configured through a setup portal rather than compiled into the sketch.
 
