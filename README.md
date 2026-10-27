@@ -36,6 +36,9 @@ Sending a wake command does not prove that a pack is healthy, safe to charge, or
 
 No cloud account is required. There is no built-in MQTT, Home Assistant discovery, OTA updater, or persistent telemetry database.
 
+<img width="1504" height="931" alt="image" src="https://github.com/user-attachments/assets/c0b0122f-7deb-4ff8-a355-0313e8a57fd3" />
+
+
 ## Compatibility and project status
 
 The sketch targets an ESP32-C6 development board and the observed ES200 / ES90 UART frame family. Compatibility with every pack revision, connector, or firmware version is not established.
