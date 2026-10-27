@@ -68,7 +68,7 @@ For initial firmware loading, power the board from USB with the battery interfac
 
 | Item | Purpose |
 | --- | --- |
-| ESP32-C6 development board | Runs the firmware and Wi-Fi dashboard |
+| ESP32-C6 development board [Amazon link](https://www.amazon.com/dp/B0GVQZT6FD?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2)| Runs the firmware and Wi-Fi dashboard |
 | USB data cable | Programming and initial board power |
 | Compatible ES200 / ES90 battery | UART communication target |
 | 1 kΩ resistor | External reply-line pull-up for the observed setup |
@@ -76,7 +76,7 @@ For initial firmware loading, power the board from USB with the battery interfac
 | Computer with Arduino IDE | Compile and upload firmware |
 | Local 2.4 GHz Wi-Fi network | Normal dashboard access |
 | Multimeter; optional logic analyzer | Verify electrical levels and diagnose communication |
-| Down Buck Converter Power Module 4.5-50V to 3-40V | To convert the battery packs 30V-42V down to a stable 3.3V |
+| Down Buck Converter Power Module 4.5-50V to 3-40V [Amazon link](https://www.amazon.com/dp/B0DCJM5M5P?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1) | To convert the battery packs 30V-42V down to a stable 3.3V |
 
 The ESP32 must have its own suitable regulated power supply. This README does not specify a pack-powered regulator design.
 
