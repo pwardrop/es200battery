@@ -36,6 +36,7 @@ Sending a wake command does not prove that a pack is healthy, safe to charge, or
 
 No cloud account is required. There is no built-in MQTT, Home Assistant discovery, OTA updater, or persistent telemetry database.
 
+## Screenshot of battery monitoring dashboard
 <img width="1504" height="931" alt="image" src="https://github.com/user-attachments/assets/c0b0122f-7deb-4ff8-a355-0313e8a57fd3" />
 
 
@@ -75,6 +76,7 @@ For initial firmware loading, power the board from USB with the battery interfac
 | Computer with Arduino IDE | Compile and upload firmware |
 | Local 2.4 GHz Wi-Fi network | Normal dashboard access |
 | Multimeter; optional logic analyzer | Verify electrical levels and diagnose communication |
+| Down Buck Converter Power Module 4.5-50V to 3-40V | To convert the battery packs 30V-42V down to a stable 3.3V |
 
 The ESP32 must have its own suitable regulated power supply. This README does not specify a pack-powered regulator design.
 
@@ -119,6 +121,10 @@ BatterySerial.begin(9600, SERIAL_8N1, BAT_RX_PIN, BAT_TX_PIN);
 ```
 
 These numbers refer to GPIO numbers, not physical header positions. Check your board's pinout; a label such as `D6` is not necessarily GPIO 6. The sketch enables an internal pull-up as well, but the observed hardware setup uses the external resistor.
+
+Image of wiring from battery cable to esp32 board via down buck module:
+<img width="1244" height="766" alt="image" src="https://github.com/user-attachments/assets/e1eb9220-bb14-4d74-809e-14f75b69bbae" />
+
 
 ## Install and upload with Arduino IDE
 
